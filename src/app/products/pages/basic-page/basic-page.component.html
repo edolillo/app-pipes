@@ -1,0 +1,52 @@
+<p-panel header="Pipes Básicos" class="p-1">
+  <p>
+    Pipes incluidos en Angular - Usualmente en el Common Module
+  </p>
+  <div class="grid">
+    <div class="col-12 md:col-4">
+      <p-card header="uppercase" class="text-center p-3 border-round-sm  font-bold">{{ lowerText }} => {{ lowerText | uppercase}}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="lowercase" class="text-center p-3 border-round-sm  font-bold">{{ upperText }} => {{ upperText | lowercase}}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="titlecase" class="text-center p-3 border-round-sm  font-bold">{{ fullText }} => {{ fullText | titlecase}}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha normal" class="text-center p-3 border-round-sm  font-bold">currentDate => {{ currentDate }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date solamente" class="text-center p-3 border-round-sm  font-bold">currentDate | date => {{ currentDate | date }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con short" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'short' => {{ currentDate | date:'short' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con long" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'long' => {{ currentDate | date:'long' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con MMMM" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'MMMM' => {{ currentDate | date:'MMMM' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con MMMM dd, yyyy " class="text-center p-3 border-round-sm  font-bold">currentDate | date:'MMMM dd, yyyy' => {{ currentDate | date:'MMMM dd, yyyy' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con 'long':'GMT-6'" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'long':'GMT-6' => {{ currentDate | date:'long':'GMT-6' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con 'long':'GMT-4'" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'long':'GMT-4' => {{ currentDate | date:'long':'GMT-4' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con 'long':'GMT-6'" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'long':'GMT-6':'es-CL' => {{ currentDate | date:'long':'GMT-6':'es-CL' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con 'long':'GMT-4'" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'long':'GMT-4:es-CL' => {{ currentDate | date:'long':'GMT-4':'es-CL' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con 'long':'GMT-6'" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'long':'GMT-6':'fr' => {{ currentDate | date:'long':'GMT-6':'fr-CA' }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="fecha con pipe date con 'long':'GMT-4'" class="text-center p-3 border-round-sm  font-bold">currentDate | date:'long':'GMT-4:fr' => {{ currentDate | date:'long':'GMT-4':'fr-CA' }}</p-card>
+    </div>
+  </div>
+</p-panel>
